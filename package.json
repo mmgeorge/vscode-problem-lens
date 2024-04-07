@@ -3,6 +3,11 @@
   "displayName": "Problem Lens",
   "description": "",
   "version": "0.0.1",
+  "publisher": "mmgeorge",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mmgeorge/vscode-problem-lens.git"
+  },
   "engines": {
     "vscode": "^1.88.0"
   },
