@@ -1,0 +1,77 @@
+{
+  "name": "problem-lens",
+  "displayName": "Problem Lens",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.88.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "problem-lens.gotoNextError",
+        "title": "Problem Lens: Goto Next Problem (Error)"
+      },
+      {
+        "command": "problem-lens.gotoNextWarning",
+        "title": "Problem Lens: Goto Next Problem (Warning)"
+      },
+      {
+        "command": "problem-lens.gotoNextWarningOrInformation",
+        "title": "Problem Lens: Goto Next Problem (Warning, Info)"
+      },
+      {
+        "command": "problem-lens.gotoNextProblem",
+        "title": "Problem Lens: Goto Next Problem (Error, Warning, Info)"
+      },
+      {
+        "command": "problem-lens.gotoNextErrorOrWarning",
+        "title": "Problem Lens: Goto Next Problem (Error, Warning)"
+      },
+      {
+        "command": "problem-lens.gotoPreviousError",
+        "title": "Problem Lens: Goto Previous Problem (Error)"
+      },
+      {
+        "command": "problem-lens.gotoPreviousWarning",
+        "title": "Problem Lens: Goto Previous Problem (Warning)"
+      },
+      {
+        "command": "problem-lens.gotoPreviousWarningOrInformation",
+        "title": "Problem Lens: Goto Previous Problem (Warning, Info)"
+      },
+      {
+        "command": "problem-lens.gotoPreviousProblem",
+        "title": "Problem Lens: Goto Previous Problem (Error, Warning, Info)"
+      },
+      {
+        "command": "problem-lens.gotoPreviousErrorOrWarning",
+        "title": "Problem Lens: Goto Previous Problem (Error, Warning)"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.88.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^7.4.0",
+    "@typescript-eslint/parser": "^7.4.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.3.3",
+    "@vscode/test-cli": "^0.0.8",
+    "@vscode/test-electron": "^2.3.9"
+  }
+}
